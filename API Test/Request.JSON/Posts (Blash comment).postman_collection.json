@@ -1,0 +1,102 @@
+{
+	"info": {
+		"_postman_id": "926295a4-98cc-4a20-920a-08a9c3bf0096",
+		"name": "Posts (Blash comment)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23641776"
+	},
+	"item": [
+		{
+			"name": "Get by ID",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "jwt {{token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url}}/posts/636663ef75609f4a3eaf10f3",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"posts",
+						"636663ef75609f4a3eaf10f3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit complete",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "jwt {{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"isComplete\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/posts/636663ef75609f4a3eaf10f3/complete",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"posts",
+						"636663ef75609f4a3eaf10f3",
+						"complete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create comment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "jwt {{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"content\": \"<p>awesome</p>\",\r\n    \"mentionedUsers\": [],\r\n    \"type\": \"blast\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/posts/636663ef75609f4a3eaf10f3/comments",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"posts",
+						"636663ef75609f4a3eaf10f3",
+						"comments"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/Features\/card[1:6]","start":1670647534713,"end":1670647534816,"title":"src\/test\/java\/Features\/card[1:6] 11:45:34.713-11:45:34.816 Create card","className":"failed"},{"id":2,"group":1,"content":"src\/test\/java\/Features\/card[2:19]","start":1670647534823,"end":1670647534917,"title":"src\/test\/java\/Features\/card[2:19] 11:45:34.823-11:45:34.917 Get  by ID card","className":"failed"},{"id":3,"group":1,"content":"src\/test\/java\/Features\/statistic[1:6]","start":1670647536370,"end":1670647536478,"title":"src\/test\/java\/Features\/statistic[1:6] 11:45:36.370-11:45:36.478 Get companies"},{"id":4,"group":1,"content":"src\/test\/java\/Features\/statistic[2:19]","start":1670647536482,"end":1670647536587,"title":"src\/test\/java\/Features\/statistic[2:19] 11:45:36.482-11:45:36.587 Get summary"},{"id":5,"group":1,"content":"src\/test\/java\/Features\/statistic[3:43]","start":1670647536590,"end":1670647536733,"title":"src\/test\/java\/Features\/statistic[3:43] 11:45:36.590-11:45:36.733 Get user company"},{"id":6,"group":1,"content":"src\/test\/java\/Features\/grouphat[1:6]","start":1670647535391,"end":1670647535517,"title":"src\/test\/java\/Features\/grouphat[1:6] 11:45:35.391-11:45:35.517 Create attachment"},{"id":7,"group":1,"content":"src\/test\/java\/Features\/grouphat[2:18]","start":1670647535521,"end":1670647535634,"title":"src\/test\/java\/Features\/grouphat[2:18] 11:45:35.521-11:45:35.634 Create chat"},{"id":8,"group":1,"content":"src\/test\/java\/Features\/grouphat[3:30]","start":1670647535639,"end":1670647535730,"title":"src\/test\/java\/Features\/grouphat[3:30] 11:45:35.639-11:45:35.730 Get all chat","className":"failed"},{"id":9,"group":1,"content":"src\/test\/java\/Features\/post[1:6]","start":1670647536033,"end":1670647536124,"title":"src\/test\/java\/Features\/post[1:6] 11:45:36.033-11:45:36.124 Get by ID","className":"failed"},{"id":10,"group":1,"content":"src\/test\/java\/Features\/post[2:17]","start":1670647536129,"end":1670647536226,"title":"src\/test\/java\/Features\/post[2:17] 11:45:36.129-11:45:36.226 Edit complete","className":"failed"},{"id":11,"group":1,"content":"src\/test\/java\/Features\/post[3:30]","start":1670647536230,"end":1670647536328,"title":"src\/test\/java\/Features\/post[3:30] 11:45:36.230-11:45:36.328 Create comment"},{"id":12,"group":1,"content":"src\/test\/java\/Features\/team[1:6]","start":1670647536771,"end":1670647536870,"title":"src\/test\/java\/Features\/team[1:6] 11:45:36.771-11:45:36.870 Get current team","className":"failed"},{"id":13,"group":1,"content":"src\/test\/java\/Features\/team[2:17]","start":1670647536875,"end":1670647536977,"title":"src\/test\/java\/Features\/team[2:17] 11:45:36.875-11:45:36.977 Get current team and company","className":"failed"},{"id":14,"group":1,"content":"src\/test\/java\/Features\/team[3:28]","start":1670647536981,"end":1670647537103,"title":"src\/test\/java\/Features\/team[3:28] 11:45:36.981-11:45:37.103 Create teams"},{"id":15,"group":1,"content":"src\/test\/java\/Features\/list[1:7]","start":1670647535783,"end":1670647535890,"title":"src\/test\/java\/Features\/list[1:7] 11:45:35.783-11:45:35.890 Edit list","className":"failed"},{"id":16,"group":1,"content":"src\/test\/java\/Features\/list[2:20]","start":1670647535894,"end":1670647535992,"title":"src\/test\/java\/Features\/list[2:20] 11:45:35.894-11:45:35.992 Create list"},{"id":17,"group":1,"content":"src\/test\/java\/Features\/users[1:6]","start":1670647537141,"end":1670647537230,"title":"src\/test\/java\/Features\/users[1:6] 11:45:37.141-11:45:37.230 Get profile","className":"failed"},{"id":18,"group":1,"content":"src\/test\/java\/Features\/users[2:17]","start":1670647537234,"end":1670647537320,"title":"src\/test\/java\/Features\/users[2:17] 11:45:37.234-11:45:37.320 Edit profile","className":"failed"},{"id":19,"group":1,"content":"src\/test\/java\/Features\/blash[1:7]","start":1670647530200,"end":1670647532877,"title":"src\/test\/java\/Features\/blash[1:7] 11:45:30.200-11:45:32.877 Get  by ID board"},{"id":20,"group":1,"content":"src\/test\/java\/Features\/blash[2:18]","start":1670647532888,"end":1670647533335,"title":"src\/test\/java\/Features\/blash[2:18] 11:45:32.888-11:45:33.335 Create blash"},{"id":21,"group":1,"content":"src\/test\/java\/Features\/blash[3:31]","start":1670647533343,"end":1670647533893,"title":"src\/test\/java\/Features\/blash[3:31] 11:45:33.343-11:45:33.893 Edit blash"},{"id":22,"group":1,"content":"src\/test\/java\/Features\/board[1:7]","start":1670647534548,"end":1670647534657,"title":"src\/test\/java\/Features\/board[1:7] 11:45:34.548-11:45:34.657 Get  by ID board","className":"failed"},{"id":23,"group":1,"content":"src\/test\/java\/Features\/company[1:7]","start":1670647534976,"end":1670647535072,"title":"src\/test\/java\/Features\/company[1:7] 11:45:34.976-11:45:35.072 Edit company","className":"failed"},{"id":24,"group":1,"content":"src\/test\/java\/Features\/company[2:20]","start":1670647535078,"end":1670647535208,"title":"src\/test\/java\/Features\/company[2:20] 11:45:35.078-11:45:35.208 Create company"},{"id":25,"group":1,"content":"src\/test\/java\/Features\/company[3:32]","start":1670647535212,"end":1670647535310,"title":"src\/test\/java\/Features\/company[3:32] 11:45:35.212-11:45:35.310 Get all by user","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

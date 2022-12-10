@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "b93131ef-6d93-4c51-b929-4b8fc6076233",
+		"name": "Group Chat",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23641776"
+	},
+	"item": [
+		{
+			"name": "Get all chat",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "jwt {{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "{{url}}/group-chats/63665ff575609f4a3eaef948",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"group-chats",
+						"63665ff575609f4a3eaef948"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create chat",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "jwt {{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"content\": \"<p>halo manteman</p>\",\r\n    \"mentionedUsers\": []\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/group-chats/63665ff575609f4a3eaef948/messages",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"group-chats",
+						"63665ff575609f4a3eaef948",
+						"messages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete chat",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "jwt {{token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url}}/group-chats/63665ff575609f4a3eaef948/messages/6366682975609f4a3eaf2b74",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"group-chats",
+						"63665ff575609f4a3eaef948",
+						"messages",
+						"6366682975609f4a3eaf2b74"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

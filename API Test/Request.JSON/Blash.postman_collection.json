@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "333fba2a-35a6-47ba-9744-5f9decab2d36",
+		"name": "Blash",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23641776"
+	},
+	"item": [
+		{
+			"name": "Get by ID blash",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "jwt {{token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url}}/blasts/63665ff575609f4a3eaef949",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"blasts",
+						"63665ff575609f4a3eaef949"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create blash",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "jwt {{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Test Blasts nova\",\r\n    \"content\": \"<p>Test Blasts</p>\",\r\n    \"subscribers\": [\r\n        \"636639313e7ccfa63708d9fb\"\r\n    ],\r\n    \"mentionedUsers\": [],\r\n    \"isAutoComplete\": true,\r\n    \"autoComplete\": {\r\n        \"status\": true,\r\n        \"date\": \"2022-11-05T19:39:00+07:00\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/blasts/63665ff575609f4a3eaef949/posts",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"blasts",
+						"63665ff575609f4a3eaef949",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit blash",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "jwt {{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Test Blasts Due Date Nova\",\r\n    \"content\": \"<p>Mencoba hal baru</p>\",\r\n    \"subscribers\": [\r\n        \"636639313e7ccfa63708d9fb\"\r\n        \r\n    ],\r\n    \"mentionedUsers\": [],\r\n    \"isAutoComplete\": false,\r\n    \"dueDate\": \"2021-09-29T19:45:00+07:00\"\r\n    }\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/posts/636663ef75609f4a3eaf10f3",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"posts",
+						"636663ef75609f4a3eaf10f3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

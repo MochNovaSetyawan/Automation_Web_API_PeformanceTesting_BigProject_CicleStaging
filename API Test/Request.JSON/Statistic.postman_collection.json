@@ -1,0 +1,113 @@
+{
+	"info": {
+		"_postman_id": "7569db67-5a0f-4d2d-8d31-524435ed1699",
+		"name": "Statistic",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23641776"
+	},
+	"item": [
+		{
+			"name": "Get companies",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "jwt {{token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url}}/statistics/companies?name=Sekolah QA",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"statistics",
+						"companies"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Sekolah QA"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get total data company",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/statistics?companyId=61eba2c85080f47b25ddc8f8&startDate=2022-01-22&endDate=2022-11-05",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"statistics"
+					],
+					"query": [
+						{
+							"key": "companyId",
+							"value": "61eba2c85080f47b25ddc8f8"
+						},
+						{
+							"key": "startDate",
+							"value": "2022-01-22"
+						},
+						{
+							"key": "endDate",
+							"value": "2022-11-05"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get summary",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/statistics/summary",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"statistics",
+						"summary"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get user company",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/statistics/users?email=testingnova2000@gmail.com",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"statistics",
+						"users"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "testingnova2000@gmail.com"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

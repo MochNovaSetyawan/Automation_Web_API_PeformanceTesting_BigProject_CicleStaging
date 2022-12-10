@@ -1,0 +1,75 @@
+{
+	"info": {
+		"_postman_id": "79a54afd-c4c9-474b-ac17-1b9dc0ce8170",
+		"name": "List",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23641776"
+	},
+	"item": [
+		{
+			"name": "Edit list",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "jwt {{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"selector\": {\r\n        \"boardId\": \"63665ff575609f4a3eaef947\"\r\n    },\r\n    \"data\": {\r\n        \"name\": \"kanban nova\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/lists/6366655f75609f4a3eaf1ad6",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"lists",
+						"6366655f75609f4a3eaf1ad6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create list",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "jwt {{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"selector\": {\r\n        \"boardId\": \"63665ff575609f4a3eaef947\"\r\n    },\r\n    \"data\": {\r\n        \"name\": \"nova keren\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/lists",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"lists"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

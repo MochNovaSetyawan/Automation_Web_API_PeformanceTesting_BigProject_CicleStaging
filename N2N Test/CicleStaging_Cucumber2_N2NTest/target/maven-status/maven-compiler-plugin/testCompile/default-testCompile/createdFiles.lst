@@ -1,0 +1,9 @@
+MyStepdefsz\groupchatTest.class
+page\boardPage.class
+page\groupchatPage.class
+page\blashPage.class
+base\bypass.class
+MyStepdefsz\blashTest.class
+util\testUtil.class
+TestRunner\TestRunner.class
+MyStepdefsz\boardTest.class

@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("18768ef4-c64d-4454-84e7-5d01dced657f",{name:"62812"});
+    posthog.capture("report_feature",{karate_version:"1.2.0",karate_meta:null});
+  }
+});
+</script>
+  
+    <title>src.test.java.Features.users</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">2</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2022-11-19 09:52:35 AM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:6]"><span>[1:6]</span> <span>Get profile</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:17]"><span>[2:17]</span> <span>Edit profile</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/Features/users.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">User Profile</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:6]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:6]</span>
+                <span class="scenario-name">Get profile</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>225</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:6]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:6]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.3">
+      <div class="step-ref bg-step">3</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://stagingapi.cicle.app/api/v1&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:6]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def tokenID = &#39;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYzNjYzOTMxM2U3Y2NmYTYzNzA4ZDlmYiIsImdvb2dsZUlkIjoiMTEwMjMyMDY2MjM2MTQwOTczMjc4IiwiZW1haWwiOiJ0ZXN0aW5nbm92YTIwMDBAZ21haWwuY29tIiwiZnVsbE5hbWUiOiJUZXN0IE5vdmEiLCJwaG90b1VybCI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FMbTV3dTBJc3RLUWtIQjJqYUVmY1pocm1PQmpMY0pYQkRNYkFYam5aa3lJPXM5Ni1jIiwiYmlvIjoiIiwic3RhdHVzIjoiIiwiZGVmYXVsdENvbXBhbnkiOnsiX2lkIjoiNjFlYmEyYzg1MDgwZjQ3YjI1ZGRjOGY4In0sImNyZWF0ZWRBdCI6IjIwMjItMTEtMDVUMTA6MjE6MzcuMjk0WiIsInVwZGF0ZWRBdCI6IjIwMjItMTEtMDVUMTA6MjI6MjcuODA5WiIsIl9fdiI6MH0sImlhdCI6MTY2NzY1MzQzMCwiZXhwIjoxNjcwMjQ1NDMwfQ.1eiYiHatGUVXJMTbFuLrwmaiaeJYQPwtw_4DWRq7AQU&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/users/636639313e7ccfa63708d9fb&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;jwt&#39; +&#39; &#39;+ tokenID</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">222</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9">09:52:35.031 request:
+1 &gt; GET https://stagingapi.cicle.app/api/v1/users/636639313e7ccfa63708d9fb
+1 &gt; Authorization: jwt eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYzNjYzOTMxM2U3Y2NmYTYzNzA4ZDlmYiIsImdvb2dsZUlkIjoiMTEwMjMyMDY2MjM2MTQwOTczMjc4IiwiZW1haWwiOiJ0ZXN0aW5nbm92YTIwMDBAZ21haWwuY29tIiwiZnVsbE5hbWUiOiJUZXN0IE5vdmEiLCJwaG90b1VybCI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FMbTV3dTBJc3RLUWtIQjJqYUVmY1pocm1PQmpMY0pYQkRNYkFYam5aa3lJPXM5Ni1jIiwiYmlvIjoiIiwic3RhdHVzIjoiIiwiZGVmYXVsdENvbXBhbnkiOnsiX2lkIjoiNjFlYmEyYzg1MDgwZjQ3YjI1ZGRjOGY4In0sImNyZWF0ZWRBdCI6IjIwMjItMTEtMDVUMTA6MjE6MzcuMjk0WiIsInVwZGF0ZWRBdCI6IjIwMjItMTEtMDVUMTA6MjI6MjcuODA5WiIsIl9fdiI6MH0sImlhdCI6MTY2NzY1MzQzMCwiZXhwIjoxNjcwMjQ1NDMwfQ.1eiYiHatGUVXJMTbFuLrwmaiaeJYQPwtw_4DWRq7AQU
+1 &gt; Host: stagingapi.cicle.app
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_341)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+09:52:35.251 response time in milliseconds: 220
+1 &lt; 200
+1 &lt; Date: Sat, 19 Nov 2022 02:52:36 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 494
+1 &lt; Connection: keep-alive
+1 &lt; Content-Security-Policy: default-src self;base-uri self;block-all-mixed-content;font-src self https: data:;frame-ancestors self https://staging.cicle.app;img-src self data:;object-src none;script-src self;script-src-attr none;style-src self https: unsafe-inline;upgrade-insecure-requests
+1 &lt; X-DNS-Prefetch-Control: off
+1 &lt; Expect-CT: max-age=0
+1 &lt; Strict-Transport-Security: max-age=15724800; includeSubDomains
+1 &lt; X-Download-Options: noopen
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; Referrer-Policy: no-referrer
+1 &lt; X-XSS-Protection: 0
+1 &lt; Vary: Origin
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; ETag: W/&quot;1ee-iERLWlRFJg8yIM28BlfnrE0BzKM&quot;
+1 &lt; Set-Cookie: routestaging=1668826357.363.385.434654|a7cfa509a09d39b6cc0786e5168df85a; Domain=stagingapi.cicle.app; Secure
+{&quot;message&quot;:&quot;Successfully get user&quot;,&quot;user&quot;:{&quot;_id&quot;:&quot;636639313e7ccfa63708d9fb&quot;,&quot;googleId&quot;:&quot;110232066236140973278&quot;,&quot;email&quot;:&quot;testingnova2000@gmail.com&quot;,&quot;fullName&quot;:&quot;Moch Nova Setyawan&quot;,&quot;photoUrl&quot;:&quot;https://lh3.googleusercontent.com/a/ALm5wu0IstKQkHB2jaEfcZhrmOBjLcJXBDMbAXjnZkyI=s96-c&quot;,&quot;bio&quot;:&quot;sudah di takdirkan maha pencipta&quot;,&quot;status&quot;:&quot;single selamanya&quot;,&quot;defaultCompany&quot;:&quot;6371aecf29439152a4f80ebf&quot;,&quot;companies&quot;:[],&quot;createdAt&quot;:&quot;2022-11-05T10:21:37.294Z&quot;,&quot;updatedAt&quot;:&quot;2022-11-14T02:58:23.059Z&quot;,&quot;__v&quot;:0}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.11">09:52:35.252 [print] {
+  &quot;message&quot;: &quot;Successfully get user&quot;,
+  &quot;user&quot;: {
+    &quot;_id&quot;: &quot;636639313e7ccfa63708d9fb&quot;,
+    &quot;googleId&quot;: &quot;110232066236140973278&quot;,
+    &quot;email&quot;: &quot;testingnova2000@gmail.com&quot;,
+    &quot;fullName&quot;: &quot;Moch Nova Setyawan&quot;,
+    &quot;photoUrl&quot;: &quot;https://lh3.googleusercontent.com/a/ALm5wu0IstKQkHB2jaEfcZhrmOBjLcJXBDMbAXjnZkyI=s96-c&quot;,
+    &quot;bio&quot;: &quot;sudah di takdirkan maha pencipta&quot;,
+    &quot;status&quot;: &quot;single selamanya&quot;,
+    &quot;defaultCompany&quot;: &quot;6371aecf29439152a4f80ebf&quot;,
+    &quot;companies&quot;: [
+    ],
+    &quot;createdAt&quot;: &quot;2022-11-05T10:21:37.294Z&quot;,
+    &quot;updatedAt&quot;: &quot;2022-11-14T02:58:23.059Z&quot;,
+    &quot;__v&quot;: 0
+  }
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print responseStatus</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.12">09:52:35.253 [print] 200 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print responseTime</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13">09:52:35.253 [print] 220 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print responseHeaders</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.14">09:52:35.254 [print] {
+  &quot;Date&quot;: [
+    &quot;Sat, 19 Nov 2022 02:52:36 GMT&quot;
+  ],
+  &quot;Content-Type&quot;: [
+    &quot;application/json; charset=utf-8&quot;
+  ],
+  &quot;Content-Length&quot;: [
+    &quot;494&quot;
+  ],
+  &quot;Connection&quot;: [
+    &quot;keep-alive&quot;
+  ],
+  &quot;Content-Security-Policy&quot;: [
+    &quot;default-src self;base-uri self;block-all-mixed-content;font-src self https: data:;frame-ancestors self https://staging.cicle.app;img-src self data:;object-src none;script-src self;script-src-attr none;style-src self https: unsafe-inline;upgrade-insecure-requests&quot;
+  ],
+  &quot;X-DNS-Prefetch-Control&quot;: [
+    &quot;off&quot;
+  ],
+  &quot;Expect-CT&quot;: [
+    &quot;max-age=0&quot;
+  ],
+  &quot;Strict-Transport-Security&quot;: [
+    &quot;max-age=15724800; includeSubDomains&quot;
+  ],
+  &quot;X-Download-Options&quot;: [
+    &quot;noopen&quot;
+  ],
+  &quot;X-Content-Type-Options&quot;: [
+    &quot;nosniff&quot;
+  ],
+  &quot;X-Permitted-Cross-Domain-Policies&quot;: [
+    &quot;none&quot;
+  ],
+  &quot;Referrer-Policy&quot;: [
+    &quot;no-referrer&quot;
+  ],
+  &quot;X-XSS-Protection&quot;: [
+    &quot;0&quot;
+  ],
+  &quot;Vary&quot;: [
+    &quot;Origin&quot;
+  ],
+  &quot;Access-Control-Allow-Credentials&quot;: [
+    &quot;true&quot;
+  ],
+  &quot;ETag&quot;: [
+    &quot;W/\&quot;1ee-iERLWlRFJg8yIM28BlfnrE0BzKM\&quot;&quot;
+  ],
+  &quot;Set-Cookie&quot;: [
+    &quot;routestaging=1668826357.363.385.434654|a7cfa509a09d39b6cc0786e5168df85a; Domain=stagingapi.cicle.app; Secure&quot;
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print responseCookies</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.15">09:52:35.254 [print] {
+  &quot;routestaging&quot;: {
+    &quot;path&quot;: null,
+    &quot;domain&quot;: &quot;stagingapi.cicle.app&quot;,
+    &quot;name&quot;: &quot;routestaging&quot;,
+    &quot;max-age&quot;: -9223372036854775808,
+    &quot;httponly&quot;: false,
+    &quot;secure&quot;: true,
+    &quot;value&quot;: &quot;1668826357.363.385.434654|a7cfa509a09d39b6cc0786e5168df85a&quot;,
+    &quot;wrap&quot;: false
+  }
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:17]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:17]</span>
+                <span class="scenario-name">Edit profile</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>709</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:17]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:17]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.3">
+      <div class="step-ref bg-step">3</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://stagingapi.cicle.app/api/v1&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:17]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def tokenID = &#39;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYzNjYzOTMxM2U3Y2NmYTYzNzA4ZDlmYiIsImdvb2dsZUlkIjoiMTEwMjMyMDY2MjM2MTQwOTczMjc4IiwiZW1haWwiOiJ0ZXN0aW5nbm92YTIwMDBAZ21haWwuY29tIiwiZnVsbE5hbWUiOiJUZXN0IE5vdmEiLCJwaG90b1VybCI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FMbTV3dTBJc3RLUWtIQjJqYUVmY1pocm1PQmpMY0pYQkRNYkFYam5aa3lJPXM5Ni1jIiwiYmlvIjoiIiwic3RhdHVzIjoiIiwiZGVmYXVsdENvbXBhbnkiOnsiX2lkIjoiNjFlYmEyYzg1MDgwZjQ3YjI1ZGRjOGY4In0sImNyZWF0ZWRBdCI6IjIwMjItMTEtMDVUMTA6MjE6MzcuMjk0WiIsInVwZGF0ZWRBdCI6IjIwMjItMTEtMDVUMTA6MjI6MjcuODA5WiIsIl9fdiI6MH0sImlhdCI6MTY2NzY1MzQzMCwiZXhwIjoxNjcwMjQ1NDMwfQ.1eiYiHatGUVXJMTbFuLrwmaiaeJYQPwtw_4DWRq7AQU&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/users/636639313e7ccfa63708d9fb&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;jwt&#39; +&#39; &#39;+ tokenID</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method PATCH</span>
+      </div>
+    </div>
+    <div class="time-cell passed">708</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.20">09:52:35.258 request:
+1 &gt; PATCH https://stagingapi.cicle.app/api/v1/users/636639313e7ccfa63708d9fb
+1 &gt; Authorization: jwt eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYzNjYzOTMxM2U3Y2NmYTYzNzA4ZDlmYiIsImdvb2dsZUlkIjoiMTEwMjMyMDY2MjM2MTQwOTczMjc4IiwiZW1haWwiOiJ0ZXN0aW5nbm92YTIwMDBAZ21haWwuY29tIiwiZnVsbE5hbWUiOiJUZXN0IE5vdmEiLCJwaG90b1VybCI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FMbTV3dTBJc3RLUWtIQjJqYUVmY1pocm1PQmpMY0pYQkRNYkFYam5aa3lJPXM5Ni1jIiwiYmlvIjoiIiwic3RhdHVzIjoiIiwiZGVmYXVsdENvbXBhbnkiOnsiX2lkIjoiNjFlYmEyYzg1MDgwZjQ3YjI1ZGRjOGY4In0sImNyZWF0ZWRBdCI6IjIwMjItMTEtMDVUMTA6MjE6MzcuMjk0WiIsInVwZGF0ZWRBdCI6IjIwMjItMTEtMDVUMTA6MjI6MjcuODA5WiIsIl9fdiI6MH0sImlhdCI6MTY2NzY1MzQzMCwiZXhwIjoxNjcwMjQ1NDMwfQ.1eiYiHatGUVXJMTbFuLrwmaiaeJYQPwtw_4DWRq7AQU
+1 &gt; Host: stagingapi.cicle.app
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_341)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+09:52:35.965 response time in milliseconds: 706
+1 &lt; 200
+1 &lt; Date: Sat, 19 Nov 2022 02:52:37 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 1267
+1 &lt; Connection: keep-alive
+1 &lt; Content-Security-Policy: default-src self;base-uri self;block-all-mixed-content;font-src self https: data:;frame-ancestors self https://staging.cicle.app;img-src self data:;object-src none;script-src self;script-src-attr none;style-src self https: unsafe-inline;upgrade-insecure-requests
+1 &lt; X-DNS-Prefetch-Control: off
+1 &lt; Expect-CT: max-age=0
+1 &lt; Strict-Transport-Security: max-age=15724800; includeSubDomains
+1 &lt; X-Download-Options: noopen
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; Referrer-Policy: no-referrer
+1 &lt; X-XSS-Protection: 0
+1 &lt; Vary: Origin
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; ETag: W/&quot;4f3-T6McGWgEJlU7jQ3MaonG+kuMcWc&quot;
+1 &lt; Set-Cookie: routestaging=1668826357.595.385.42384|a7cfa509a09d39b6cc0786e5168df85a; Domain=stagingapi.cicle.app; Secure
+{&quot;message&quot;:&quot;Successfully update user&quot;,&quot;user&quot;:{&quot;_id&quot;:&quot;636639313e7ccfa63708d9fb&quot;,&quot;googleId&quot;:&quot;110232066236140973278&quot;,&quot;email&quot;:&quot;testingnova2000@gmail.com&quot;,&quot;fullName&quot;:&quot;Moch Nova Setyawan&quot;,&quot;photoUrl&quot;:&quot;https://lh3.googleusercontent.com/a/ALm5wu0IstKQkHB2jaEfcZhrmOBjLcJXBDMbAXjnZkyI=s96-c&quot;,&quot;bio&quot;:&quot;sudah di takdirkan maha pencipta&quot;,&quot;status&quot;:&quot;single selamanya&quot;,&quot;defaultCompany&quot;:{&quot;_id&quot;:&quot;6371aecf29439152a4f80ebf&quot;},&quot;companies&quot;:[],&quot;createdAt&quot;:&quot;2022-11-05T10:21:37.294Z&quot;,&quot;updatedAt&quot;:&quot;2022-11-14T02:58:23.059Z&quot;,&quot;__v&quot;:0},&quot;token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYzNjYzOTMxM2U3Y2NmYTYzNzA4ZDlmYiIsImdvb2dsZUlkIjoiMTEwMjMyMDY2MjM2MTQwOTczMjc4IiwiZW1haWwiOiJ0ZXN0aW5nbm92YTIwMDBAZ21haWwuY29tIiwiZnVsbE5hbWUiOiJNb2NoIE5vdmEgU2V0eWF3YW4iLCJwaG90b1VybCI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FMbTV3dTBJc3RLUWtIQjJqYUVmY1pocm1PQmpMY0pYQkRNYkFYam5aa3lJPXM5Ni1jIiwiYmlvIjoic3VkYWggZGkgdGFrZGlya2FuIG1haGEgcGVuY2lwdGEiLCJzdGF0dXMiOiJzaW5nbGUgc2VsYW1hbnlhIiwiZGVmYXVsdENvbXBhbnkiOnsiX2lkIjoiNjM3MWFlY2YyOTQzOTE1MmE0ZjgwZWJmIn0sImNvbXBhbmllcyI6W10sImNyZWF0ZWRBdCI6IjIwMjItMTEtMDVUMTA6MjE6MzcuMjk0WiIsInVwZGF0ZWRBdCI6IjIwMjItMTEtMTRUMDI6NTg6MjMuMDU5WiIsIl9fdiI6MH0sImlhdCI6MTY2ODgyNjM1NywiZXhwIjoxNjcxNDE4MzU3fQ.nRrvs7Fm0ucTuB__pjhArg2vfzMZqSj-J93AEO8L_hE&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&#39;fullName&#39;:&#39;Moch Nova Setyawan&#39;,&#39;status&#39;:&#39;single selamanya&#39;,&#39;bio&#39;:&#39;sudah di takdirkan maha pencipta&#39;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.23">09:52:35.966 [print] {
+  &quot;message&quot;: &quot;Successfully update user&quot;,
+  &quot;user&quot;: {
+    &quot;_id&quot;: &quot;636639313e7ccfa63708d9fb&quot;,
+    &quot;googleId&quot;: &quot;110232066236140973278&quot;,
+    &quot;email&quot;: &quot;testingnova2000@gmail.com&quot;,
+    &quot;fullName&quot;: &quot;Moch Nova Setyawan&quot;,
+    &quot;photoUrl&quot;: &quot;https://lh3.googleusercontent.com/a/ALm5wu0IstKQkHB2jaEfcZhrmOBjLcJXBDMbAXjnZkyI=s96-c&quot;,
+    &quot;bio&quot;: &quot;sudah di takdirkan maha pencipta&quot;,
+    &quot;status&quot;: &quot;single selamanya&quot;,
+    &quot;defaultCompany&quot;: {
+      &quot;_id&quot;: &quot;6371aecf29439152a4f80ebf&quot;
+    },
+    &quot;companies&quot;: [
+    ],
+    &quot;createdAt&quot;: &quot;2022-11-05T10:21:37.294Z&quot;,
+    &quot;updatedAt&quot;: &quot;2022-11-14T02:58:23.059Z&quot;,
+    &quot;__v&quot;: 0
+  },
+  &quot;token&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYzNjYzOTMxM2U3Y2NmYTYzNzA4ZDlmYiIsImdvb2dsZUlkIjoiMTEwMjMyMDY2MjM2MTQwOTczMjc4IiwiZW1haWwiOiJ0ZXN0aW5nbm92YTIwMDBAZ21haWwuY29tIiwiZnVsbE5hbWUiOiJNb2NoIE5vdmEgU2V0eWF3YW4iLCJwaG90b1VybCI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FMbTV3dTBJc3RLUWtIQjJqYUVmY1pocm1PQmpMY0pYQkRNYkFYam5aa3lJPXM5Ni1jIiwiYmlvIjoic3VkYWggZGkgdGFrZGlya2FuIG1haGEgcGVuY2lwdGEiLCJzdGF0dXMiOiJzaW5nbGUgc2VsYW1hbnlhIiwiZGVmYXVsdENvbXBhbnkiOnsiX2lkIjoiNjM3MWFlY2YyOTQzOTE1MmE0ZjgwZWJmIn0sImNvbXBhbmllcyI6W10sImNyZWF0ZWRBdCI6IjIwMjItMTEtMDVUMTA6MjE6MzcuMjk0WiIsInVwZGF0ZWRBdCI6IjIwMjItMTEtMTRUMDI6NTg6MjMuMDU5WiIsIl9fdiI6MH0sImlhdCI6MTY2ODgyNjM1NywiZXhwIjoxNjcxNDE4MzU3fQ.nRrvs7Fm0ucTuB__pjhArg2vfzMZqSj-J93AEO8L_hE&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print responseStatus</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.24">09:52:35.967 [print] 200 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print responseTime</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.25">09:52:35.967 [print] 706 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print responseHeaders</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.26">09:52:35.967 [print] {
+  &quot;Date&quot;: [
+    &quot;Sat, 19 Nov 2022 02:52:37 GMT&quot;
+  ],
+  &quot;Content-Type&quot;: [
+    &quot;application/json; charset=utf-8&quot;
+  ],
+  &quot;Content-Length&quot;: [
+    &quot;1267&quot;
+  ],
+  &quot;Connection&quot;: [
+    &quot;keep-alive&quot;
+  ],
+  &quot;Content-Security-Policy&quot;: [
+    &quot;default-src self;base-uri self;block-all-mixed-content;font-src self https: data:;frame-ancestors self https://staging.cicle.app;img-src self data:;object-src none;script-src self;script-src-attr none;style-src self https: unsafe-inline;upgrade-insecure-requests&quot;
+  ],
+  &quot;X-DNS-Prefetch-Control&quot;: [
+    &quot;off&quot;
+  ],
+  &quot;Expect-CT&quot;: [
+    &quot;max-age=0&quot;
+  ],
+  &quot;Strict-Transport-Security&quot;: [
+    &quot;max-age=15724800; includeSubDomains&quot;
+  ],
+  &quot;X-Download-Options&quot;: [
+    &quot;noopen&quot;
+  ],
+  &quot;X-Content-Type-Options&quot;: [
+    &quot;nosniff&quot;
+  ],
+  &quot;X-Permitted-Cross-Domain-Policies&quot;: [
+    &quot;none&quot;
+  ],
+  &quot;Referrer-Policy&quot;: [
+    &quot;no-referrer&quot;
+  ],
+  &quot;X-XSS-Protection&quot;: [
+    &quot;0&quot;
+  ],
+  &quot;Vary&quot;: [
+    &quot;Origin&quot;
+  ],
+  &quot;Access-Control-Allow-Credentials&quot;: [
+    &quot;true&quot;
+  ],
+  &quot;ETag&quot;: [
+    &quot;W/\&quot;4f3-T6McGWgEJlU7jQ3MaonG+kuMcWc\&quot;&quot;
+  ],
+  &quot;Set-Cookie&quot;: [
+    &quot;routestaging=1668826357.595.385.42384|a7cfa509a09d39b6cc0786e5168df85a; Domain=stagingapi.cicle.app; Secure&quot;
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print responseCookies</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.27">09:52:35.967 [print] {
+  &quot;routestaging&quot;: {
+    &quot;path&quot;: null,
+    &quot;domain&quot;: &quot;stagingapi.cicle.app&quot;,
+    &quot;name&quot;: &quot;routestaging&quot;,
+    &quot;max-age&quot;: -9223372036854775808,
+    &quot;httponly&quot;: false,
+    &quot;secure&quot;: true,
+    &quot;value&quot;: &quot;1668826357.595.385.42384|a7cfa509a09d39b6cc0786e5168df85a&quot;,
+    &quot;wrap&quot;: false
+  }
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

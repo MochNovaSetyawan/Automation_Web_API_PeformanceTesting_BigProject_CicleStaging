@@ -1,0 +1,92 @@
+{
+	"info": {
+		"_postman_id": "75682ac5-9479-4dbe-bee4-bd99c6eff277",
+		"name": "Teams",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23641776"
+	},
+	"item": [
+		{
+			"name": "Get current team",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "jwt {{token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url}}/teams",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"teams"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get current team and company",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "jwt {{token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url}}/teams/63665ff575609f4a3eaef8d3",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"teams",
+						"63665ff575609f4a3eaef8d3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create team",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "jwt {{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"data\": {\r\n        \"desc\": \"Bukan hanya sekedar team\",\r\n        \"name\": \"nova\",\r\n        \"type\": \"team\"\r\n    },\r\n    \"selector\": {\r\n        \"companyId\": \"61eba2c85080f47b25ddc8f8\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/teams",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"teams"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,13 @@
+{
+  "title": "test blash",
+  "content": "<p>create blash</p>",
+  "subscribers": [
+    "636639313e7ccfa63708d9fb"
+  ],
+  "mentionedUsers": [],
+  "isAutoComplete": true,
+  "autoComplete": {
+    "status": true,
+    "date": "2023-12-05T19:39:00+07:00"
+  }
+}

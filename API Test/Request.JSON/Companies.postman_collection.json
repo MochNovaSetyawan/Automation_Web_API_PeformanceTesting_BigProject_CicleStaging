@@ -1,0 +1,143 @@
+{
+	"info": {
+		"_postman_id": "cdcfc2f9-1ce5-4d19-b409-5f97abd02375",
+		"name": "Companies",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23641776"
+	},
+	"item": [
+		{
+			"name": "Get all by user",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "jwt {{token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url}}/companies",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"companies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get by ID (not function)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "jwt {{token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url}}/companies/61eba2c85080f47b25ddc8f8",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"companies",
+						"61eba2c85080f47b25ddc8f8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create company",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "jwt {{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"PT maju terus smpai mundur\",\r\n    \"desc\": \"tidak pernah lihat ke belakang\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/companies",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"companies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit company",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "jwt {{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"PT.Setia Cilsy\",\r\n    \"desc\": \"belajar QA di cilsy aja\",\r\n    \"workloadCapacity\": 7\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/companies/6366678675609f4a3eaf2453",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"companies",
+						"6366678675609f4a3eaf2453"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete company",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "jwt {{token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "/companies/6366678675609f4a3eaf2453",
+					"path": [
+						"companies",
+						"6366678675609f4a3eaf2453"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

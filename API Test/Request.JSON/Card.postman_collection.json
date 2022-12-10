@@ -1,0 +1,66 @@
+{
+	"info": {
+		"_postman_id": "350ba683-f974-48fa-af69-75efdb320e5f",
+		"name": "Card",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23641776"
+	},
+	"item": [
+		{
+			"name": "Get by ID card",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "jwt {{token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url}}/cards/636666d375609f4a3eaf2075",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"cards",
+						"636666d375609f4a3eaf2075"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create  card",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "jwt {{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"selector\": {\r\n        \"boardId\": \"63665ff575609f4a3eaef947\",\r\n        \"listId\": \"6366655f75609f4a3eaf1ad6\"\r\n    },\r\n    \"data\": {\r\n        \"name\": \"Buat card baru nova\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/cards",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"cards"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,188 @@
+{
+	"info": {
+		"_postman_id": "d8923a47-bbde-4d70-9878-531ee277c313",
+		"name": "Schedule",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23641776"
+	},
+	"item": [
+		{
+			"name": "Get by ID",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Create event schedule",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "jwt {{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Cek\",\r\n    \"content\": \"<p>Coba dong</p>\",\r\n    \"startDate\": \"2021-01-31T15:43:20.446Z\",\r\n    \"endDate\": \"2021-01-31T15:43:20.446Z\",\r\n    \"subscribers\": [\r\n        \"60090530280e28d610b758ab\"\r\n    ],\r\n    \"mentionedUsers\": []\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/schedules/63665ff575609f4a3eaef94b/events",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"schedules",
+						"63665ff575609f4a3eaef94b",
+						"events"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create event schedule without title",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "jwt {{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"content\": \"<p>Coba dong</p>\",\r\n    \"startDate\": \"2021-01-31T15:43:20.446Z\",\r\n    \"endDate\": \"2021-01-31T15:43:20.446Z\",\r\n    \"subscribers\": [\r\n        \"60090530280e28d610b758ab\"\r\n    ],\r\n    \"mentionedUsers\": []\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/schedules/63665ff575609f4a3eaef94b/events",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"schedules",
+						"63665ff575609f4a3eaef94b",
+						"events"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create event schedule without content",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "jwt {{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Cek\",\r\n    \"startDate\": \"2021-01-31T15:43:20.446Z\",\r\n    \"endDate\": \"2021-01-31T15:43:20.446Z\",\r\n    \"subscribers\": [\r\n        \"60090530280e28d610b758ab\"\r\n    ],\r\n    \"mentionedUsers\": []\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/schedules/63665ff575609f4a3eaef94b/events",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"schedules",
+						"63665ff575609f4a3eaef94b",
+						"events"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create event schedule without startdate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "jwt {{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Cek\",\r\n    \"content\": \"<p>Coba dong</p>\",\r\n    \"endDate\": \"2021-01-31T15:43:20.446Z\",\r\n    \"subscribers\": [\r\n        \"60090530280e28d610b758ab\"\r\n    ],\r\n    \"mentionedUsers\": []\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/schedules/63665ff575609f4a3eaef94b/events",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"schedules",
+						"63665ff575609f4a3eaef94b",
+						"events"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create event schedule without enddate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "jwt {{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Cek\",\r\n    \"content\": \"<p>Coba dong</p>\",\r\n    \"startDate\": \"2021-01-31T15:43:20.446Z\"\r\n    \"subscribers\": [\r\n        \"60090530280e28d610b758ab\"\r\n    ],\r\n    \"mentionedUsers\": []\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/schedules/63665ff575609f4a3eaef94b/events",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"schedules",
+						"63665ff575609f4a3eaef94b",
+						"events"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

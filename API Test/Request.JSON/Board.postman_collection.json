@@ -1,0 +1,34 @@
+{
+	"info": {
+		"_postman_id": "31793a1b-1d33-4736-9b7d-a4ff700cf779",
+		"name": "Board",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23641776"
+	},
+	"item": [
+		{
+			"name": "Get by ID board",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "jwt {{token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url}}/boards/63665ff575609f4a3eaef947",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"boards",
+						"63665ff575609f4a3eaef947"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,1296 @@
+{
+	"info": {
+		"_postman_id": "c76a1665-a8e2-4ba3-97e7-4f8a4edec503",
+		"name": "Cilsy Staging",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23641776"
+	},
+	"item": [
+		{
+			"name": "Blash",
+			"item": [
+				{
+					"name": "Get by ID blash",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "jwt {{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/blasts/63665ff575609f4a3eaef949",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"blasts",
+								"63665ff575609f4a3eaef949"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create blash",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "jwt {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Test Blasts novas\",\r\n    \"content\": \"<p>Test Blasts</p>\",\r\n    \"subscribers\": [\r\n        \"636639313e7ccfa63708d9fb\"\r\n    ],\r\n    \"mentionedUsers\": [],\r\n    \"isAutoComplete\": true,\r\n    \"autoComplete\": {\r\n        \"status\": true,\r\n        \"date\": \"2022-11-05T19:39:00+07:00\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/blasts/63665ff575609f4a3eaef949/posts",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"blasts",
+								"63665ff575609f4a3eaef949",
+								"posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create blash without title",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "jwt {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"content\": \"<p>without title</p>\",\r\n    \"subscribers\": [\r\n        \"636639313e7ccfa63708d9fb\"\r\n    ],\r\n    \"mentionedUsers\": [],\r\n    \"isAutoComplete\": true,\r\n    \"autoComplete\": {\r\n        \"status\": true,\r\n        \"date\": \"2022-11-05T19:39:00+07:00\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/blasts/63665ff575609f4a3eaef949/posts",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"blasts",
+								"63665ff575609f4a3eaef949",
+								"posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create blash without description",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "jwt {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"without description\",\r\n    \"subscribers\": [\r\n        \"636639313e7ccfa63708d9fb\"\r\n    ],\r\n    \"mentionedUsers\": [],\r\n    \"isAutoComplete\": true,\r\n    \"autoComplete\": {\r\n        \"status\": true,\r\n        \"date\": \"2022-11-05T19:39:00+07:00\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/blasts/63665ff575609f4a3eaef949/posts",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"blasts",
+								"63665ff575609f4a3eaef949",
+								"posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit blash",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "jwt {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"test blash\",\r\n    \"content\": \"<p>edit blash</p>\",\r\n    \"subscribers\": [\r\n        \"636639313e7ccfa63708d9fb\"\r\n        \r\n    ],\r\n    \"mentionedUsers\": [],\r\n    \"isAutoComplete\": false,\r\n    \"dueDate\": \"2021-09-29T19:45:00+07:00\"\r\n    }\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/posts/636663ef75609f4a3eaf10f3",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"posts",
+								"636663ef75609f4a3eaf10f3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit blash without description",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "jwt {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Test Blasts Due Date Nova\",\r\n    \"subscribers\": [\r\n        \"636639313e7ccfa63708d9fb\"\r\n        \r\n    ],\r\n    \"mentionedUsers\": [],\r\n    \"isAutoComplete\": false,\r\n    \"dueDate\": \"2021-09-29T19:45:00+07:00\"\r\n    }\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/posts/636663ef75609f4a3eaf10f3",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"posts",
+								"636663ef75609f4a3eaf10f3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit blash without title",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "jwt {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"content\": \"<p>Mencoba hal baru</p>\",\r\n    \"subscribers\": [\r\n        \"636639313e7ccfa63708d9fb\"\r\n        \r\n    ],\r\n    \"mentionedUsers\": [],\r\n    \"isAutoComplete\": false,\r\n    \"dueDate\": \"2021-09-29T19:45:00+07:00\"\r\n    }\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/posts/636663ef75609f4a3eaf10f3",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"posts",
+								"636663ef75609f4a3eaf10f3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Board",
+			"item": [
+				{
+					"name": "Get by ID board",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "jwt {{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/boards/63665ff575609f4a3eaef947",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"boards",
+								"63665ff575609f4a3eaef947"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Card",
+			"item": [
+				{
+					"name": "Get by ID card",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "jwt {{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/cards/636666d375609f4a3eaf2075",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"cards",
+								"636666d375609f4a3eaf2075"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create  card",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "jwt {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"selector\": {\r\n        \"boardId\": \"63665ff575609f4a3eaef947\",\r\n        \"listId\": \"6366655f75609f4a3eaf1ad6\"\r\n    },\r\n    \"data\": {\r\n        \"name\": \"Buat card baru nova\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/cards",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"cards"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create  card without name",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "jwt {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"selector\": {\r\n        \"boardId\": \"63665ff575609f4a3eaef947\",\r\n        \"listId\": \"6366655f75609f4a3eaf1ad6\"\r\n    },\r\n    \"data\": {\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/cards",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"cards"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Company",
+			"item": [
+				{
+					"name": "Get all by user",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "jwt {{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/companies",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"companies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create company",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "jwt {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"PT maju terus smpai mundur\",\r\n    \"desc\": \"tidak pernah lihat ke belakang\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/companies",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"companies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create company without name",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "jwt {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"desc\": \"tidak pernah lihat ke belakang\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/companies",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"companies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create company without description",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "jwt {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"PT maju terus smpai mundur\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/companies",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"companies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit company",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "jwt {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"PT.Sekolah cilsy novas\",\r\n    \"desc\": \"belajar QA di cilsy aja\",\r\n    \"workloadCapacity\": 7\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/companies/6371aecf29439152a4f80ebf",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"companies",
+								"6371aecf29439152a4f80ebf"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit company without name",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "jwt {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"desc\": \"belajar QA di cilsy aja\",\r\n    \"workloadCapacity\": 7\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/companies/6366678675609f4a3eaf2453",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"companies",
+								"6366678675609f4a3eaf2453"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit company without description",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "jwt {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"PT.Setia Cilsy\"\r\n    \"workloadCapacity\": 7\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/companies/6366678675609f4a3eaf2453",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"companies",
+								"6366678675609f4a3eaf2453"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete company",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "jwt {{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/companies/636ba922aa1f4a00a8ab3f4d",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"companies",
+								"636ba922aa1f4a00a8ab3f4d"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Group Chat",
+			"item": [
+				{
+					"name": "Attachment",
+					"item": [
+						{
+							"name": "Create attachment",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "jwt {{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "file",
+											"type": "file",
+											"src": "/C:/Users/62812/OneDrive/Pictures/index.png"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/group-chats/63665ff575609f4a3eaef948/attachments",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"group-chats",
+										"63665ff575609f4a3eaef948",
+										"attachments"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete attachment",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "jwt {{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/group-chats/63665ff575609f4a3eaef948/attachments/638c868d4a7205eb1b2abc7b",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"group-chats",
+										"63665ff575609f4a3eaef948",
+										"attachments",
+										"638c868d4a7205eb1b2abc7b"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Get all chat",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "jwt {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "{{url}}/group-chats/63665ff575609f4a3eaef948",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"group-chats",
+								"63665ff575609f4a3eaef948"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create chat",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "jwt {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"content\": \"<p>halo manateman</p>\",\r\n    \"mentionedUsers\": []\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/group-chats/63665ff575609f4a3eaef948/messages",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"group-chats",
+								"63665ff575609f4a3eaef948",
+								"messages"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create chat without word",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "jwt {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"mentionedUsers\": []\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/group-chats/63665ff575609f4a3eaef948/messages",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"group-chats",
+								"63665ff575609f4a3eaef948",
+								"messages"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete chat",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "jwt {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/group-chats/63665ff575609f4a3eaef948/messages/638c86874a7205eb1b2abae0",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"group-chats",
+								"63665ff575609f4a3eaef948",
+								"messages",
+								"638c86874a7205eb1b2abae0"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "List",
+			"item": [
+				{
+					"name": "Edit list",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "jwt {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"selector\": {\r\n        \"boardId\": \"63665ff575609f4a3eaef947\"\r\n    },\r\n    \"data\": {\r\n        \"name\": \"nova secret\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/lists/6371a63229439152a4f7fae3",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"lists",
+								"6371a63229439152a4f7fae3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create list",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "jwt {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"selector\": {\r\n        \"boardId\": \"63665ff575609f4a3eaef947\"\r\n    },\r\n    \"data\": {\r\n        \"name\": \"nova keren\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/lists",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"lists"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create list without name",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "jwt {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"selector\": {\r\n        \"boardId\": \"63665ff575609f4a3eaef947\"\r\n    },\r\n    \"data\": {\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/lists",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"lists"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Post (Blash Comment)",
+			"item": [
+				{
+					"name": "Get by ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "jwt {{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/posts/636fa20e2b70f216bee13514",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"posts",
+								"636fa20e2b70f216bee13514"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit complete",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "jwt {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"isComplete\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/posts/636663ef75609f4a3eaf10f3/complete",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"posts",
+								"636663ef75609f4a3eaf10f3",
+								"complete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create comment",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "jwt {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"content\": \"<p>awesome</p>\",\r\n    \"mentionedUsers\": [],\r\n    \"type\": \"blast\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/posts/636fa7142b70f216bee13ea5/comments",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"posts",
+								"636fa7142b70f216bee13ea5",
+								"comments"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Statistic",
+			"item": [
+				{
+					"name": "Get companies",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "jwt {{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/statistics/companies?name=Sekolah QA",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"statistics",
+								"companies"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Sekolah QA"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get total data company",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/statistics?companyId=61eba2c85080f47b25ddc8f8&startDate=2022-01-22&endDate=2022-11-05",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"statistics"
+							],
+							"query": [
+								{
+									"key": "companyId",
+									"value": "61eba2c85080f47b25ddc8f8"
+								},
+								{
+									"key": "startDate",
+									"value": "2022-01-22"
+								},
+								{
+									"key": "endDate",
+									"value": "2022-11-05"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get summary",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/statistics/summary",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"statistics",
+								"summary"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get user company",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/statistics/users?email=testingnova2000@gmail.com",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"statistics",
+								"users"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "testingnova2000@gmail.com"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Get profile",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "jwt {{token}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{url}}/users/636639313e7ccfa63708d9fb",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"users",
+								"636639313e7ccfa63708d9fb"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit profile",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "jwt {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "fullName",
+									"value": "Moch Nova Setyawan",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "single selamanya",
+									"type": "text"
+								},
+								{
+									"key": "bio",
+									"value": "sudah di takdirkan maha pencipta",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/users/636639313e7ccfa63708d9fb",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"users",
+								"636639313e7ccfa63708d9fb"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Team",
+			"item": [
+				{
+					"name": "Get current team",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "jwt {{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/teams",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"teams"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get current team and company",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "jwt {{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/teams/63665ff575609f4a3eaef8d3",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"teams",
+								"63665ff575609f4a3eaef8d3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create team",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "jwt {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"data\": {\r\n        \"desc\": \"Bukan hanya sekedar team\",\r\n        \"name\": \"nova\",\r\n        \"type\": \"team\"\r\n    },\r\n    \"selector\": {\r\n        \"companyId\": \"61eba2c85080f47b25ddc8f8\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/teams",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"teams"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
