@@ -3,22 +3,17 @@ package MyStepdefs;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.junit.Assert;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import page.groupchatPage;
 
-public class groupchatTest{
+public class groupchatTest {
 
     public WebDriver driver;
-
     public groupchatTest() {
         super();
-        this.driver = bypass.driver;
+        this.driver=bypass.driver;
     }
     groupchatPage GroupchatPage = new groupchatPage();
-
 
     @When("User click groupchat box menu")
     public void userClickGroupchatBoxMenu() throws InterruptedException {
@@ -41,8 +36,7 @@ public class groupchatTest{
     @Then("User successfully send chat in groupchat")
     public void userSuccessfullySendChatInGroupchat() throws InterruptedException {
         Thread.sleep(2000);
-        WebElement sendChatingroupchat = driver.findElement(By.xpath("//*[contains(text(),'ini groupchat')]"));
-        Assert.assertTrue(sendChatingroupchat.isDisplayed());
+        GroupchatPage.Verifysendchat();
     }
 
     @And("User type @ in chat")
@@ -60,8 +54,7 @@ public class groupchatTest{
     @Then("User successfully send mention in groupchat")
     public void userSuccessfullySendMentionInGroupchat() throws InterruptedException {
         Thread.sleep(2000);
-        WebElement sendChatingroupchat = driver.findElement(By.xpath("//*[contains(text(),'Testing Nova')]"));
-        Assert.assertTrue(sendChatingroupchat.isDisplayed());
+        GroupchatPage.Verifysendmention();
     }
 
     @And("User click menu message")
@@ -86,6 +79,7 @@ public class groupchatTest{
     @Then("User successfully delete chat in groupchat")
     public void userSuccessfullyDeleteChatInGroupchat() throws InterruptedException {
         Thread.sleep(2000);
+        GroupchatPage.Verifydeletechat();
     }
 
 }

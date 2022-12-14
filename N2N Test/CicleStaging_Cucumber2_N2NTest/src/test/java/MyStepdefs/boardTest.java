@@ -7,14 +7,14 @@ import org.openqa.selenium.WebDriver;
 import page.boardPage;
 
 public class boardTest {
-
     public WebDriver driver;
-
-    public  boardTest(){
+    public boardTest() {
         super();
-        this.driver =  bypass.driver;
+        this.driver= bypass.driver;
     }
     boardPage BoardPage = new boardPage();
+
+
     @When("User click board box menu")
     public void userClickBoardBoxMenu() throws InterruptedException {
         Thread.sleep(2000);
@@ -129,7 +129,7 @@ public class boardTest {
         BoardPage.ClickSavebutton();
     }
 
-    @And("User successfully edit description")
+    @Then("User successfully edit description")
     public void userSuccessfullyEditDescription() throws InterruptedException {
         Thread.sleep(2000);
         BoardPage.Verifyeditdescription();
@@ -265,25 +265,25 @@ public class boardTest {
     public void userSuccessfullyMoveCard() throws InterruptedException {
         Thread.sleep(2000);
         BoardPage.Verifymovecard();
+        Thread.sleep(2000);
     }
 
-    @And("User card back to normal")
-    public void userCardBackToNormal() throws InterruptedException {
-        Thread.sleep(2000);
-        BoardPage.Closecard();
-        Thread.sleep(2000);
-        BoardPage.Choosemovecard2();
-        Thread.sleep(2000);
-        BoardPage.Clickmovebutton();
-        Thread.sleep(2000);
-        BoardPage.Clicklistbutton();
-        Thread.sleep(2000);
-        BoardPage.Chooseboardlist2();
-        Thread.sleep(2000);
-        BoardPage.Clickmovebutoon();
-        Thread.sleep(2000);
-        BoardPage.Verifymovecard();
-    }
+//    @And("User card back to normal")
+//    public void userCardBackToNormal() throws InterruptedException {
+//        Thread.sleep(2000);
+//        BoardPage.Closecard();
+//        Thread.sleep(2000);
+//        BoardPage.Choosemovecard2();
+//        Thread.sleep(2000);
+//        BoardPage.Clickmovebutton();
+//        Thread.sleep(2000);
+//        BoardPage.Clicklistbutton();
+//        Thread.sleep(2000);
+//        BoardPage.Chooseboardlist2();
+//        Thread.sleep(2000);
+//        BoardPage.Clickmovebutoon();
+//        Thread.sleep(2000);
+//    }
 
     @And("User click attachment button")
     public void userClickAttachmentButton() throws InterruptedException {

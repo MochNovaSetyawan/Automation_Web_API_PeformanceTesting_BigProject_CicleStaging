@@ -34,7 +34,7 @@ Feature: User can use board properly
     And User choose card
     And User click card name
     And User type edit card coloumn
-    And User successfully edit card
+    Then User successfully edit card
 
   @Positive05
   Scenario: User add description
@@ -43,7 +43,7 @@ Feature: User can use board properly
     And User choose card
     And User type description
     And User click Save button
-    And User successfully edit description
+    Then User successfully edit description
 
   @Positive06
   Scenario: User edit description
@@ -53,7 +53,7 @@ Feature: User can use board properly
     And User click notes button
     And User type edit description
     And User click Save button
-    And User successfully edit description
+    Then User successfully edit description
 
   @Positive07
   Scenario: User add comment in board
@@ -115,7 +115,7 @@ Feature: User can use board properly
     And User choose move list
     And User click move
     Then User successfully move card
-    And User card back to normal
+#    And User card back to normal
 
   @Positive13
   Scenario: User send attachment in board
@@ -146,7 +146,7 @@ Feature: User can use board properly
     Then User successfully delete attachment
 
   @Positive16
-  Scenario: user makes the card private
+  Scenario: User makes the card private
     Given User click nova team
     When User click board box menu
     And User choose card
@@ -154,7 +154,7 @@ Feature: User can use board properly
     Then User successfully makes the card private
 
   @Positive17
-  Scenario: user makes the card public
+  Scenario: User makes the card public
     Given User click nova team
     When User click board box menu
     And User choose card
@@ -162,7 +162,7 @@ Feature: User can use board properly
     Then User successfully makes the card public
 
   @Positive18
-  Scenario: user set due date
+  Scenario: User set due date
     Given User click nova team
     When User click board box menu
     And User choose card
@@ -173,7 +173,7 @@ Feature: User can use board properly
     Then User successfully set due date
 
   @Positive19
-  Scenario: user remove due date
+  Scenario: User remove due date
     Given User click nova team
     When User click board box menu
     And User choose card

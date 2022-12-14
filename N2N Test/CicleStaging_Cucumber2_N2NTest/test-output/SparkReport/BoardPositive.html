@@ -1,0 +1,2233 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Dec 14, 2022 11:08:30 PM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@Positive11</a><a class="dropdown-item" href="#">@Positive12</a><a class="dropdown-item" href="#">@Positive15</a><a class="dropdown-item" href="#">@Positive16</a><a class="dropdown-item" href="#">@Positive01</a><a class="dropdown-item" href="#">@Positive17</a><a class="dropdown-item" href="#">@Positive14</a><a class="dropdown-item" href="#">@Positive02</a><a class="dropdown-item" href="#">@BoardPositive</a><a class="dropdown-item" href="#">@Positive03</a><a class="dropdown-item" href="#">@Positive10</a><a class="dropdown-item" href="#">@Positive04</a><a class="dropdown-item" href="#">@Positive06</a><a class="dropdown-item" href="#">@Positive07</a><a class="dropdown-item" href="#">@Positive09</a><a class="dropdown-item" href="#">@Positive05</a><a class="dropdown-item" href="#">@Positive19</a><a class="dropdown-item" href="#">@Positive08</a><a class="dropdown-item" href="#">@Positive13</a><a class="dropdown-item" href="#">@Positive18</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">User can use board properly</p>
+            <p class="text-sm">
+              <span>11:08:31 PM</span> / <span>00:10:05:616</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">User can use board properly</h5>
+<span class='badge badge-success'>12.14.2022 11:08:31 PM</span>
+<span class='badge badge-danger'>12.14.2022 11:18:36 PM</span>
+<span class='badge badge-default'>00:10:05:616</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>User create new board list</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="MyStepdefs.teamTest.userClickNovaTeam()">
+                <span>Given User click nova team</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userClickBoardBoxMenu()">
+                <span>When User click board box menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userClickAddNewList()">
+                <span>And User click add new list</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userTypeListColoumn()">
+                <span>And User type list Coloumn</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userClickCreateButton()">
+                <span>And User click create button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userCanSeeTheResultOfCreateNewBoard()">
+                <span>Then User can see the result of create new board</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="11"><span class="badge log pass-bg mr-2">Pass</span>User create new card</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="MyStepdefs.teamTest.userClickNovaTeam()">
+                <span>Given User click nova team</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userClickBoardBoxMenu()">
+                <span>When User click board box menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userClickAddCard()">
+                <span>And User click add card</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userTypeCardName()">
+                <span>And User type card name</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userClickAddCardButton()">
+                <span>And User click add card button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userCanSeeTheResultOfCreateNewCard()">
+                <span>Then User can see the result of create new card</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="20"><span class="badge log pass-bg mr-2">Pass</span>User edit board list</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="MyStepdefs.teamTest.userClickNovaTeam()">
+                <span>Given User click nova team</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userClickBoardBoxMenu()">
+                <span>When User click board box menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userClickListName()">
+                <span>And User click list name</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userTypeEditListColoumn()">
+                <span>And User type edit list coloumn</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userSuccessfullyEditBoardList()">
+                <span>Then User successfully edit board list</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="28"><span class="badge log pass-bg mr-2">Pass</span>User edit card</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="MyStepdefs.teamTest.userClickNovaTeam()">
+                <span>Given User click nova team</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userClickBoardBoxMenu()">
+                <span>When User click board box menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userChooseCard()">
+                <span>And User choose card</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userClickCardName()">
+                <span>And User click card name</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userTypeEditCardColoumn()">
+                <span>And User type edit card coloumn</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userSuccessfullyEditCard()">
+                <span>Then User successfully edit card</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="37"><span class="badge log pass-bg mr-2">Pass</span>User add description</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="MyStepdefs.teamTest.userClickNovaTeam()">
+                <span>Given User click nova team</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userClickBoardBoxMenu()">
+                <span>When User click board box menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userChooseCard()">
+                <span>And User choose card</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userTypeDescription()">
+                <span>And User type description</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userClickSaveButton()">
+                <span>And User click Save button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userSuccessfullyEditDescription()">
+                <span>Then User successfully edit description</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="46"><span class="badge log pass-bg mr-2">Pass</span>User edit description</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="MyStepdefs.teamTest.userClickNovaTeam()">
+                <span>Given User click nova team</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userClickBoardBoxMenu()">
+                <span>When User click board box menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userChooseCard()">
+                <span>And User choose card</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userClickNotesButton()">
+                <span>And User click notes button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userTypeEditDescription()">
+                <span>And User type edit description</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userClickSaveButton()">
+                <span>And User click Save button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userSuccessfullyEditDescription()">
+                <span>Then User successfully edit description</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="56"><span class="badge log pass-bg mr-2">Pass</span>User add comment in board</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="MyStepdefs.teamTest.userClickNovaTeam()">
+                <span>Given User click nova team</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userClickBoardBoxMenu()">
+                <span>When User click board box menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userChooseCard()">
+                <span>And User choose card</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.blastTest.userTypeComment()">
+                <span>And User type comment</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.blastTest.userClickPost()">
+                <span>And User click post button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userSuccessfullyAddCommentInBoard()">
+                <span>Then User successfully add comment in board</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="65"><span class="badge log pass-bg mr-2">Pass</span>User add subcriber in board</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="MyStepdefs.teamTest.userClickNovaTeam()">
+                <span>Given User click nova team</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userClickBoardBoxMenu()">
+                <span>When User click board box menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userChooseCard()">
+                <span>And User choose card</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userClickPlusButtonInBoard()">
+                <span>And User click plus button in board</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userClickApplyMemberButton()">
+                <span>And User click apply member button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userCanAddSucriberInBoard()">
+                <span>Then User can add sucriber in board</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="74"><span class="badge log pass-bg mr-2">Pass</span>User create label</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="MyStepdefs.teamTest.userClickNovaTeam()">
+                <span>Given User click nova team</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userClickBoardBoxMenu()">
+                <span>When User click board box menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userChooseCard()">
+                <span>And User choose card</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userClickLabelButton()">
+                <span>And User click label button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userClickAddLabelButton()">
+                <span>And User click add label button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userTypeNameLabelColoumn()">
+                <span>And User type name label coloumn</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userChooseColorLabel()">
+                <span>And User choose color label</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userClickCreateButton()">
+                <span>And User click create button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userCanAddLabelInBoard()">
+                <span>Then User can add label in board</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="86"><span class="badge log pass-bg mr-2">Pass</span>User add label</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="MyStepdefs.teamTest.userClickNovaTeam()">
+                <span>Given User click nova team</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userClickBoardBoxMenu()">
+                <span>When User click board box menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userChooseCard()">
+                <span>And User choose card</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userClickLabelButton()">
+                <span>And User click label button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userChooseLabel()">
+                <span>And User choose label</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userClickApplyLabels()">
+                <span>And User click apply labels</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userSuccessfullyAddLabel()">
+                <span>Then User successfully add label</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="96"><span class="badge log pass-bg mr-2">Pass</span>User remove label</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="MyStepdefs.teamTest.userClickNovaTeam()">
+                <span>Given User click nova team</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userClickBoardBoxMenu()">
+                <span>When User click board box menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userChooseCard()">
+                <span>And User choose card</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userClickLabelButton()">
+                <span>And User click label button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userClickEditLabelButton()">
+                <span>And User click edit label button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userClickDeleteButtonInBoard()">
+                <span>And User click delete button in board</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userSuccessfullyDeleteLabel()">
+                <span>Then User successfully delete label</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="106"><span class="badge log fail-bg mr-2">Fail</span>user move card list</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="MyStepdefs.teamTest.userClickNovaTeam()">
+                <span>Given User click nova team</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userClickBoardBoxMenu()">
+                <span>When User click board box menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userChooseMoveCard()">
+                <span>And User choose move card</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userClickMoveButton()">
+                <span>And User click move button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userClickMoveList()">
+                <span>And User click move list</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userChooseMoveList()">
+                <span>And User choose move list</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userClickMove()">
+                <span>And User click move</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="MyStepdefs.boardTest.userSuccessfullyMoveCard()">
+                <span>Then User successfully move card</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at page.boardPage.Verifymovecard(boardPage.java:269)
+	at MyStepdefs.boardTest.userSuccessfullyMoveCard(boardTest.java:267)
+	at ✽.User successfully move card(file:///C:/Users/62812/Documents/Big%20Project/AUTOMATION/N2N%20Test/CicleStaging_Cucumber2_N2NTest/src/test/resources/features/boardTestPositive.feature:117)
+</textarea>
+      
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="117"><span class="badge log pass-bg mr-2">Pass</span>User send attachment in board</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="MyStepdefs.teamTest.userClickNovaTeam()">
+                <span>Given User click nova team</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userClickBoardBoxMenu()">
+                <span>When User click board box menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userChooseCard()">
+                <span>And User choose card</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userClickAttachmentButton()">
+                <span>And User click attachment button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userSendAttachment()">
+                <span>And User send Attachment</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userSuccessfullySendAttachment()">
+                <span>And User successfully send attachment</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="126"><span class="badge log pass-bg mr-2">Pass</span>User edit attachment in board</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="MyStepdefs.teamTest.userClickNovaTeam()">
+                <span>Given User click nova team</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userClickBoardBoxMenu()">
+                <span>When User click board box menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userChooseCard()">
+                <span>And User choose card</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.blastTest.userClickEdit()">
+                <span>And User click edit</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userTypeLinkName()">
+                <span>And User type link name</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userClickUpdate()">
+                <span>And User click update</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userSuccessfullyEditNameAttachment()">
+                <span>Then User successfully edit name attachment</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="136"><span class="badge log pass-bg mr-2">Pass</span>User delete attachment in board</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="MyStepdefs.teamTest.userClickNovaTeam()">
+                <span>Given User click nova team</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userClickBoardBoxMenu()">
+                <span>When User click board box menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userChooseCard()">
+                <span>And User choose card</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userClickDeleteInAttachment()">
+                <span>And User click delete in attachment</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userClickDelete()">
+                <span>And User click delete</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userSuccessfullyDeleteAttachment()">
+                <span>Then User successfully delete attachment</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="145"><span class="badge log pass-bg mr-2">Pass</span>User makes the card private</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="MyStepdefs.teamTest.userClickNovaTeam()">
+                <span>Given User click nova team</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userClickBoardBoxMenu()">
+                <span>When User click board box menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userChooseCard()">
+                <span>And User choose card</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userClickPrivateCard()">
+                <span>And User click private card</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userSuccessfullyMakesTheCardPrivate()">
+                <span>Then User successfully makes the card private</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="153"><span class="badge log pass-bg mr-2">Pass</span>User makes the card public</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="MyStepdefs.teamTest.userClickNovaTeam()">
+                <span>Given User click nova team</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userClickBoardBoxMenu()">
+                <span>When User click board box menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userChooseCard()">
+                <span>And User choose card</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userClickPublicCard()">
+                <span>And User click public card</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userSuccessfullyMakesTheCardPublic()">
+                <span>Then User successfully makes the card public</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="161"><span class="badge log pass-bg mr-2">Pass</span>User set due date</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="MyStepdefs.teamTest.userClickNovaTeam()">
+                <span>Given User click nova team</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userClickBoardBoxMenu()">
+                <span>When User click board box menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userChooseCard()">
+                <span>And User choose card</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userClickDueDateButton()">
+                <span>And User click due date button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userTypeDate()">
+                <span>And User type date</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userTypeTime()">
+                <span>And User type time</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userClickSaveButton()">
+                <span>And User click Save button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userSuccessfullySetDueDate()">
+                <span>Then User successfully set due date</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="172"><span class="badge log pass-bg mr-2">Pass</span>User remove due date</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="MyStepdefs.teamTest.userClickNovaTeam()">
+                <span>Given User click nova team</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userClickBoardBoxMenu()">
+                <span>When User click board box menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userChooseCard()">
+                <span>And User choose card</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userClickDueDateButton()">
+                <span>And User click due date button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userClickRemoveButton()">
+                <span>And User click remove button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="MyStepdefs.boardTest.userSuccessfullyRemoveDueDate()">
+                <span>Then User successfully remove due date</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:15:12 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='115'>Then User successfully move card</a>
+<div class="">
+<span class="badge badge-default">User can use board properly.user move card list.Then User successfully move card</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">20</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Positive11</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Positive11</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:13:44 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='96'>User remove label</a>
+<div class="">
+<span class="badge badge-default">User can use board properly.User remove label</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@Positive12</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Positive12</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:14:37 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='106'>user move card list</a>
+<div class="">
+<span class="badge badge-default">User can use board properly.user move card list</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Positive15</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Positive15</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:16:32 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='136'>User delete attachment in board</a>
+<div class="">
+<span class="badge badge-default">User can use board properly.User delete attachment in board</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Positive16</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Positive16</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:16:57 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='145'>User makes the card private</a>
+<div class="">
+<span class="badge badge-default">User can use board properly.User makes the card private</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Positive01</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Positive01</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:08:31 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>User create new board list</a>
+<div class="">
+<span class="badge badge-default">User can use board properly.User create new board list</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Positive17</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Positive17</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:17:19 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='153'>User makes the card public</a>
+<div class="">
+<span class="badge badge-default">User can use board properly.User makes the card public</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Positive14</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Positive14</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:15:54 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='126'>User edit attachment in board</a>
+<div class="">
+<span class="badge badge-default">User can use board properly.User edit attachment in board</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Positive02</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Positive02</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:08:51 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='11'>User create new card</a>
+<div class="">
+<span class="badge badge-default">User can use board properly.User create new card</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>18</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@BoardPositive</p>
+<p class="duration text-sm">19 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@BoardPositive</h4>
+<span status="pass" class='badge log pass-bg'>18 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:08:31 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>User create new board list</a>
+<div class="">
+<span class="badge badge-default">User can use board properly.User create new board list</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:08:51 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='11'>User create new card</a>
+<div class="">
+<span class="badge badge-default">User can use board properly.User create new card</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:09:14 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='20'>User edit board list</a>
+<div class="">
+<span class="badge badge-default">User can use board properly.User edit board list</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:09:33 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='28'>User edit card</a>
+<div class="">
+<span class="badge badge-default">User can use board properly.User edit card</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:09:53 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='37'>User add description</a>
+<div class="">
+<span class="badge badge-default">User can use board properly.User add description</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:10:15 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='46'>User edit description</a>
+<div class="">
+<span class="badge badge-default">User can use board properly.User edit description</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:10:53 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='56'>User add comment in board</a>
+<div class="">
+<span class="badge badge-default">User can use board properly.User add comment in board</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:11:38 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='65'>User add subcriber in board</a>
+<div class="">
+<span class="badge badge-default">User can use board properly.User add subcriber in board</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:12:06 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='74'>User create label</a>
+<div class="">
+<span class="badge badge-default">User can use board properly.User create label</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:13:04 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='86'>User add label</a>
+<div class="">
+<span class="badge badge-default">User can use board properly.User add label</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:13:44 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='96'>User remove label</a>
+<div class="">
+<span class="badge badge-default">User can use board properly.User remove label</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:14:37 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='106'>user move card list</a>
+<div class="">
+<span class="badge badge-default">User can use board properly.user move card list</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:15:15 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='117'>User send attachment in board</a>
+<div class="">
+<span class="badge badge-default">User can use board properly.User send attachment in board</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:15:54 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='126'>User edit attachment in board</a>
+<div class="">
+<span class="badge badge-default">User can use board properly.User edit attachment in board</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:16:32 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='136'>User delete attachment in board</a>
+<div class="">
+<span class="badge badge-default">User can use board properly.User delete attachment in board</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:16:57 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='145'>User makes the card private</a>
+<div class="">
+<span class="badge badge-default">User can use board properly.User makes the card private</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:17:19 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='153'>User makes the card public</a>
+<div class="">
+<span class="badge badge-default">User can use board properly.User makes the card public</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:17:41 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='161'>User set due date</a>
+<div class="">
+<span class="badge badge-default">User can use board properly.User set due date</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:18:04 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='172'>User remove due date</a>
+<div class="">
+<span class="badge badge-default">User can use board properly.User remove due date</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Positive03</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Positive03</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:09:14 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='20'>User edit board list</a>
+<div class="">
+<span class="badge badge-default">User can use board properly.User edit board list</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Positive10</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Positive10</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:13:04 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='86'>User add label</a>
+<div class="">
+<span class="badge badge-default">User can use board properly.User add label</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Positive04</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Positive04</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:09:33 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='28'>User edit card</a>
+<div class="">
+<span class="badge badge-default">User can use board properly.User edit card</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Positive06</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Positive06</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:10:15 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='46'>User edit description</a>
+<div class="">
+<span class="badge badge-default">User can use board properly.User edit description</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Positive07</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Positive07</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:10:53 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='56'>User add comment in board</a>
+<div class="">
+<span class="badge badge-default">User can use board properly.User add comment in board</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Positive09</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Positive09</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:12:06 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='74'>User create label</a>
+<div class="">
+<span class="badge badge-default">User can use board properly.User create label</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Positive05</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Positive05</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:09:53 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='37'>User add description</a>
+<div class="">
+<span class="badge badge-default">User can use board properly.User add description</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Positive19</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Positive19</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:18:04 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='172'>User remove due date</a>
+<div class="">
+<span class="badge badge-default">User can use board properly.User remove due date</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Positive08</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Positive08</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:11:38 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='65'>User add subcriber in board</a>
+<div class="">
+<span class="badge badge-default">User can use board properly.User add subcriber in board</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Positive13</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Positive13</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:15:15 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='117'>User send attachment in board</a>
+<div class="">
+<span class="badge badge-default">User can use board properly.User send attachment in board</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Positive18</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Positive18</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:17:41 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='161'>User set due date</a>
+<div class="">
+<span class="badge badge-default">User can use board properly.User set due date</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Dec 14, 2022 11:08:30 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Dec 14, 2022 11:18:36 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>0</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'>
+<b>0</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='100%'><b>1</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='94%'><b>18</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='5%'><b>1</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='99%'><b>121</b> steps passed</small></div>
+<div>
+<small data-tooltip='0%'><b>1</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"User can use board properly":605.616
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@Positive11</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Positive12</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@Positive15</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Positive16</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Positive01</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Positive17</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Positive14</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Positive02</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@BoardPositive</td>
+<td>18</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>94.737%</td>
+</tr>
+<tr>
+<td>@Positive03</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Positive10</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Positive04</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Positive06</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Positive07</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Positive09</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Positive05</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Positive19</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Positive08</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Positive13</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Positive18</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 0,
+failParent: 1,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 18,
+failChild: 1,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 121,
+failGrandChild: 1,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

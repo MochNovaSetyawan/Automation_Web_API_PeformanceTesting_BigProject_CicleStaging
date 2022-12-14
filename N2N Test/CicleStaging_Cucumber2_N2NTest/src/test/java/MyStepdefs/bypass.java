@@ -30,10 +30,10 @@ public class bypass {
         driver.manage().timeouts().pageLoadTimeout(testUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
         driver.manage().timeouts().implicitlyWait(testUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
 
-    }
 
+    }
     @After
-    public void closeBrowser(){
+    public static void tearDown() {
         driver.quit();
     }
 }

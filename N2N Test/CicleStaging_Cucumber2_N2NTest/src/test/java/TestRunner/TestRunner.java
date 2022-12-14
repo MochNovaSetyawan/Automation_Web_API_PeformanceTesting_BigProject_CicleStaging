@@ -8,12 +8,14 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         plugin = {"pretty",
-                "json:target/cucumber-reports/BigProject-Web-BlashNegative.json",
-                "html:target/cucumber-reports/BigProject-Web-BlashNegative.html"},
-
+                "json:target/cucumber-reports/BigProject-Web-GroupchatPositive.json",
+                "html:target/cucumber-reports/BigProject-Web-GroupchatPositive.html",
+                "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
         features = "src/test/resources/features",
         glue ={"MyStepdefs"},
-        tags = "@BlashNegative"
+        monochrome = true,
+        dryRun = false,
+        tags = "@GroupchatPositive"
 )
 
 public class TestRunner {

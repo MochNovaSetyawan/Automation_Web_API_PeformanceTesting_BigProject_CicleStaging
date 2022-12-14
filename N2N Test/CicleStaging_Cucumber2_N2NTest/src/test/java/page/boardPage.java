@@ -1,19 +1,18 @@
 package page;
 
+import MyStepdefs.bypass;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
-import static MyStepdefs.bypass.driver;
 
-
-public class boardPage {
+public class boardPage extends bypass {
 
     public boardPage() {
-        super();
-        PageFactory.initElements(driver, this);
+
+        PageFactory.initElements(driver,this);
     }
 
     //CREATE BOARD
@@ -165,7 +164,7 @@ public class boardPage {
     By clicklabelbutton = By.xpath("//div[@class='Button_container__1WNuB'][normalize-space()='Labels']");
     By clickaddlabelbutton = By.cssSelector("[class=\"ToggleLabels_plusButton__3YgnQ\"]");
     By typenamelabelcoloumn = By.cssSelector("[class=\"form-control\"]");
-    By choosecolorlabel = By.cssSelector("[style=\"background-color: yellow;\"]");
+    By choosecolorlabel = By.xpath("//div[13]");
     By verifycreatelabel = By.xpath("//*[contains(text(),'Creating label for this board is success')]");
 
     public void Clicklabelbutton() {
@@ -242,7 +241,7 @@ public class boardPage {
     By chooseboardlist = By.xpath("//*[@class=\"ListNameOption_listSection__2cM1h\"][2]");
     By chooseboardlist2 = By.xpath("//*[@class=\"ListNameOption_listSection__2cM1h\"][1]");
     By clickmovebutoon = By.xpath("//div[contains(text(),'Move')]");
-    By verifymovecard = By.xpath("//*[contains(text(),'Success!')]");
+    By verifymovecard = By.xpath("//div[contains(text(),'Success!')]");
     By closecard = By.cssSelector("[class=\"close\"]");
 
     public void Choosemovecard() {
